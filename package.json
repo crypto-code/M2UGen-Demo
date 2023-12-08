@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@gradio/client": "^0.1.4"
+  },
+  "dependencies": {
+    "firebase": "^10.3.0"
+  }
+}

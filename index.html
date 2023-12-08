@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- meta charec set -->
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Page Title -->
+    <title>M2UGen</title>
+    <!-- Meta Description -->
+    <meta name="description" content="M2UGen Demo Page">
+    <!-- add icon link -->
+    <link rel = "icon" href = "https://github.com/crypto-code/M2UGen-Demo/blob/main/img/logo.png?raw=true" type = "image/x-icon">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Twitter Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery.fancybox  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- media-queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body id="body">
+
+    <!-- preloader -->
+    <div id="preloader">
+        <img src="img/preloader.gif" alt="Preloader">
+    </div>
+    <!-- end preloader -->
+
+    <!-- 
+        Fixed Navigation
+        ==================================== -->
+    <header id="navigation" class="navbar-fixed-top navbar">
+        <div style="margin-right: 5%">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+<!--                <a class="navbar-brand" href="#body">-->
+<!--                    <h1 id="logo">-->
+<!--                        <img src="img/logo.png" height="50" alt="Brandi">-->
+<!--                    </h1>-->
+<!--                </a>-->
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li class="current"><a href="#body">Home</a></li>
+                    <li><a href="#features">Contributions</a></li>
+                    <li><a href="#datagen">MusicQA Dataset</a></li>
+                    <li><a href="#modelinfo">MU-LLaMA Model</a></li>
+                    <li><a href="#modelcaptioning">T2M-Gen Dataset</a></li>
+                </ul>
+            </nav>
+            <!-- /main nav -->
+
+        </div>
+    </header>
+    <!--
+        End Fixed Navigation
+        ==================================== -->
+
+
+
+    <!--
+        Home Slider
+        ==================================== -->
+
+    <section id="slider">
+        <div id="carousel-example-generic" data-ride="carousel">
+            <!-- End Indicators bullet -->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- single slide -->
+                <div class="item active" style="background: #131b1e;">
+                    <div class="carousel-caption">
+                        <img src="img/logo.png" height="40%" alt="MU-LLaMA" data-wow-duration="700ms" class="wow fadeInDown animated">
+                        <br/>
+                        <br/>
+                        <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+                            <span>M<sup>2</sup>UGen</span></h2>
+                        <br/>
+                        <p data-wow-duration="1000ms" class="wow slideInRight animated">
+                            Multi-modal Music Understanding and Generation
+                            <br/>
+                            <br/>
+                            with the Power of Large Language Models
+                        </p>
+
+                        <ul class="social-links text-center">
+                            <li><a href="https://github.com/crypto-code/M2UGen"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://arxiv.org/abs/2311.11255"><i class="fa fa-paperclip fa-2x"></i></a></li>
+<!--                            <li><a href="https://huggingface.co/datasets/mu-llama/MusicQA"><i class="fa fa-smile-o fa-2x"></i></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <!-- end single slide -->
+            </div>
+            <!-- End Wrapper for slides -->
+
+        </div>
+    </section>
+
+    <!--
+        End Home SliderEnd
+        ==================================== -->
+
+    <!--
+        Features
+        ==================================== -->
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                    <h2>Contributions</h2>
+                    <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+                </div>
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-rocket fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>MU-LLaMA Model</h3>
+                            <p>
+                                We introduce the MU-LLaMA model, an exceptional advancement capable
+                                of performing music question answering and music captioning tasks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-database fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>MusicQA Dataset</h3>
+                            <p>
+                                We propose a systematic approach for creating the music question answering
+                                dataset, crucial for training the MU-LLaMA model,
+                                from existing music captioning and tagging datasets
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>T2M-Gen Dataset Generation</h3>
+                            <p>
+                                We demonstrate the use of the MU-LLaMA model to generate music captions
+                                in various formats required for developing Text-to-music generation models
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Features
+        ==================================== -->
+
+    <!--
+        Dataset Generation
+        ==================================== -->
+
+    <section id="datagen" class="datagen clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>MusicQA Dataset Generation</h2>
+                    <div class="devider">
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/mosaicml/mpt-7b-chat">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MPT--7B%20Chat%20Model-blue">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        We use MosaicML's MPT-7B-Chat Model <a href="https://huggingface.co/mosaicml/mpt-7b-chat"><i class="fa fa-rocket" style="color: gray"></i></a>
+                        to generate our MusicQA dataset.
+                    </p>
+                    <p>
+                        <i class="fa fa-tag fa-lg"></i> Tags or Captions &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-rocket fa-lg"></i>  MPT-7B Model &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-question fa-lg"></i> QA Pairs
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Closed-ended Question Answer Pair Generation</h3>
+            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="generate-form">
+                    <form action="" id="generate-form">
+                        <div class="form-check pull-left mb50">
+                            <label class="form-check-label">Generate QA From: </label>
+                            <input class="form-check-input" type="radio" name="generateFrom" id="captionRadio" checked>
+                            <label class="form-check-label" for="captionRadio">
+                                Caption
+                            </label>
+                            <input class="form-check-input" type="radio" name="generateFrom" id="tagRadio">
+                            <label class="form-check-label" for="tagRadio">
+                                List of Tags
+                            </label>
+                        </div>
+                        <div class="input-group mb50">
+                            <h4>Instructions: </h4>
+                            <br><br>
+                            <div id="closed-qa-instructions">
+                                <b>-</b> You are given a sentence describing an audio<br>
+                                <b>-</b> You will give answers from the audio to these questions based on the sentence<br>
+                                <div style="margin-left: 30px">
+                                    <b>-</b> Describe the music<br>
+                                    <b>-</b> Describe the music in detail<br>
+                                    <b>-</b> What do you hear in the audio<br>
+                                    <b>-</b> What can be inferred from the audio<br>
+                                </div>
+                                <b>-</b> The answers should be numbered
+                            </div>
+                        </div>
+                        <div class="input-group mb50" id="caption-div">
+                            <h4>Music Caption:</h4>
+                            <textarea name="caption" id="caption" placeholder="Music Caption" class="form-control">The music is a slow instrumental jazz piece containing violin and electronic sounds.</textarea>
+                        </div>
+                        <div class="input-group mb50" id="tag-div" style="opacity: 0; display: none">
+                            <h4>List of Tags:</h4>
+                            <input name="tags" id="tags" placeholder="List of tags"
+                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
+                                   class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" id="generate" class="pull-left form-submit" value="Generate">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="sec-sub-title text-center">
+                    <div class="generated-qa">
+                        <div id="closed-qa-loader" class="loader" style="visibility: hidden">
+                            <img src="img/preloader.gif" alt="Preloader">
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q1</b>. Describe the music</h4>
+                            <h4 class="answer"><b>A1</b>.
+                                <span id="q1">
+                                    The music is a slow instrumental jazz piece containing violin and electronic sounds.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q2</b>. Describe the music in detail</h4>
+                            <h4 class="answer"><b>A2</b>.
+                                <span id="q2">
+                                The music is a slow-paced instrumental piece that features a violin and electronic sounds. The violin plays a melancholic melody, while the electronic sounds provide a subtle background texture.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q3</b>. What do you hear in the audio?</h4>
+                            <h4 class="answer"><b>A3</b>.
+                                <span id="q3">
+                                    I hear a violin playing a slow and melancholic melody, accompanied by electronic sounds that provide a subtle background texture.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q4</b>. What can be inferred from the audio?</h4>
+                            <h4 class="answer"><b>A4</b>.
+                                <span id="q4">
+                                    From the audio, it can be inferred that the music is intended to be relaxing and introspective, with a focus on the emotional expression of the violin. The use of electronic sounds suggests a modern twist on traditional jazz music.
+                                </span></h4>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Open-ended Question Answer Pair Generation</h3>
+            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="generate-form">
+                    <form action="" id="open-generate-form">
+                        <div class="form-check pull-left mb50">
+                            <label class="form-check-label">Generate QA From: </label>
+                            <input class="form-check-input" type="radio" name="generateFrom" id="open-captionRadio" checked>
+                            <label class="form-check-label" for="open-captionRadio">
+                                Caption
+                            </label>
+                            <input class="form-check-input" type="radio" name="generateFrom" id="open-tagRadio">
+                            <label class="form-check-label" for="open-tagRadio">
+                                List of Tags
+                            </label>
+                        </div>
+                        <div class="input-group mb50">
+                            <h4>Instructions: </h4>
+                            <br><br>
+                            <div id="open-qa-instructions">
+                                <b>-</b> You are given a sentence describing an audio<br>
+                                <b>-</b> You will create 5 questions related to the audio based on the sentence along with answers<br>
+                                <b>-</b> The questions should be relating to things like tempo of the music, mood of the music, instruments used, inference, etc<br>
+                                <b>-</b> The question answers should be long form<br>
+                                <b>-</b> The question answers should be numbered
+                            </div>
+                        </div>
+                        <div class="input-group mb50" id="caption-div-open">
+                            <h4>Music Caption:</h4>
+                            <textarea name="caption" id="caption-open" placeholder="Music Caption" class="form-control">The music is a slow instrumental jazz piece containing violin and electronic sounds.</textarea>
+                        </div>
+                        <div class="input-group mb50" id="tag-div-open" style="opacity: 0; display: none">
+                            <h4>List of Tags:</h4>
+                            <input name="tags" id="tags-open" placeholder="List of tags"
+                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
+                                   class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" id="generate-open" class="pull-left form-submit" value="Generate">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="sec-sub-title text-center">
+                    <div class="generated-qa">
+                        <div id="open-qa-loader" class="loader" style="visibility: hidden">
+                            <img src="img/preloader.gif" alt="Preloader">
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q1</b>. <span id="q1c"> What is the tempo of the music?</span></h4>
+                            <h4 class="answer"><b>A1</b>.
+                                <span id="a1c">
+                                    The music is a slow piece, which means it has a tempo that is played at a leisurely pace.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q2</b>. <span id="q2c"> What instruments are used in this piece?</span></h4>
+                            <h4 class="answer"><b>A2</b>.
+                                <span id="a2c">
+                                The piece contains violin and electronic sounds. The violin adds a classical touch to the music, while the electronic sounds give it a modern twist.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q3</b>. <span id="q3c">What is the mood of the music?</span></h4>
+                            <h4 class="answer"><b>A3</b>.
+                                <span id="a3c">
+                                    The slow tempo and instrumental nature of the piece creates a calm and relaxed mood. The combination of violin and electronic sounds also gives it an introspective and contemplative feel.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q4</b>. <span id="q4c">What can you infer about the genre of the music?</span></h4>
+                            <h4 class="answer"><b>A4</b>.
+                                <span id="a4c">
+                                    The use of violin and electronic sounds in the piece suggests that it belongs to the genre of contemporary or experimental jazz.
+                                </span></h4>
+                        </div>
+                        <div>
+                            <h4 class="question"><b>Q5</b>. <span id="q5c">How does the use of electronic sounds affect the overall sound of the piece?</span></h4>
+                            <h4 class="answer"><b>A5</b>.
+                                <span id="a5c">
+                                    The use of electronic sounds adds a unique and distinct quality to the piece. It enhances the overall sound by providing a contrast to the classical sound of the violin. This contrast creates a dynamic and interesting interplay between the two sounds, making the piece stand out.
+                                </span></h4>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Caption Generation from Tags</h3>
+            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="generate-form">
+                    <form action="" id="caption-generate-form">
+                        <div class="input-group mb50">
+                            <h4>Instructions: </h4>
+                            <br><br>
+                            <div id="caption-instructions">
+                                <b>-</b> You are given a list of tags describing an audio<br>
+                                <b>-</b> You will create a short one line description of the audio based on the captions<br>
+                            </div>
+                        </div>
+                        <div class="input-group mb50" id="caption-tag-div">
+                            <h4>List of Tags:</h4>
+                            <input name="tags" id="caption-tags" placeholder="List of tags"
+                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
+                                   class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" id="caption-generate" class="pull-left form-submit" value="Generate">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="sec-sub-title text-center">
+                    <div class="generated-qa">
+                        <div id="caption-loader" class="loader" style="visibility: hidden">
+                            <img src="img/preloader.gif" alt="Preloader">
+                        </div>
+                        <div>
+                            <h4><b>Caption</b></h4>
+                            <h4 class="answer">
+                                <span id="caption-ans">
+                                    Soulful jazz and ambient electronic violin with saxophone, slow and jazzy.
+                                </span></h4>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Dataset Generation
+        ==================================== -->
+
+    <!--
+        Dataset Stats
+        ==================================== -->
+
+    <section id="facts" class="facts">
+        <div class="parallax-overlay">
+            <div class="container">
+                <div class="row number-counters">
+                    <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+                        <h2>MusicQA Dataset Statistics</h2>
+                        <div class="devider"><i class="fa fa-dashboard fa-lg"></i></div>
+                    </div>
+
+                    <!-- first count item -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+                         data-wow-duration="500ms">
+                        <div class="counters-item">
+                            <i class="fa fa-music fa-3x"></i>
+                            <strong data-speed="2.5e3" data-to="12542">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Music Files</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                         data-wow-delay="300ms">
+                        <div class="counters-item">
+                            <i class="fa fa-clock-o fa-3x"></i>
+                            <strong data-speed="2.8e3" data-to="76.15" decimals="2">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Hours of Music</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                         data-wow-delay="600ms">
+                        <div class="counters-item">
+                            <i class="fa fa-question-circle fa-3x"></i>
+                            <strong data-speed="2.2e3" data-to="112878">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Question Answer Pairs</p>
+                        </div>
+                    </div>
+                    <!-- end first count item -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Some fun facts
+        ==================================== -->
+
+    <!--
+        QA Samples
+        ==================================== -->
+
+    <section id="qasamples" class="qasamples">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>MusicQA Dataset Samples</h2>
+                    <div class="devider">
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/datasets/mu-llama/MusicQA">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MusicQA%20Dataset-green">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p>
+                        Below are a few samples of Question Answer pairs from our MusicQA dataset<br>
+                        generated using captions/tags from existing music captioning and tagging datasets.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; align-content: center">
+            <table id="dataset-table" class="table table-hover" style="width: 80%; margin: auto">
+                <tr>
+                    <th scope="col" style="width: 20%">Music</th>
+                    <th scope="col" style="width: 40%">Question</th>
+                    <th scope="col" style="width: 40%">Answer</th>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/1.mp3">
+                        </audio>
+                    </td>
+                    <td>What can be inferred from the audio?</td>
+                    <td>The setting of the audio is likely outdoors, perhaps in a campground or backyard, where people may be gathered around a fire.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/2.mp3">
+                        </audio>
+                    </td>
+                    <td>Describe the music</td>
+                    <td>The song has a traditional jazzy feel to it.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/3.mp3">
+                        </audio>
+                    </td>
+                    <td>What is the overall tone of the recording?</td>
+                    <td>The overall tone of the recording is dark and ominous.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/4.mp3">
+                        </audio>
+                    </td>
+                    <td>Describe the music in detail</td>
+                    <td>The music is upbeat and has a catchy melody. The vocalist has a strong and emotive voice that conveys a sense of passion and intensity.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/5.mp3">
+                        </audio>
+                    </td>
+                    <td>What genre of music is represented by the audio?</td>
+                    <td>The audio represents techno music, which is characterized by the use of electronic instruments and synthesizers.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/6.mp3">
+                        </audio>
+                    </td>
+                    <td>What type of music is this?</td>
+                    <td>This is a slow and quiet electronic solo flute piece.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!--
+        End QA Samples
+        ==================================== -->
+
+    <!--
+        Model info
+        ==================================== -->
+
+    <section id="modelinfo" class="modelinfo">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>Music Understanding LLM (MU-LLaMA)</h2>
+                    <div class="devider">
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://arxiv.org/abs/2308.11276">
+                            <img src="https://img.shields.io/badge/%F0%9F%93%8E%20arXiv-Paper-red">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        We propose the MU-LLaMA capable of answering music-related questions and generating captions for music files.<br>
+                        Our model utilizes audio representations from a pretrained MERT model to extract music features<br>
+                        and the LLaMA 2 model for text generation and reasoning.
+                    </p>
+                    <figure>
+                        <img src="img/model.png" style="width: 100%">
+                        <figcaption style="">MU-LLaMA Model Architecture</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Model info
+        ==================================== -->
+
+    <!--
+        Model QA
+        ==================================== -->
+
+    <section id="modelqa" class="modelqa">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>Music Question Answering</h2>
+                    <div class="devider">
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://github.com/crypto-code/MU-LLaMA">
+                            <img src="https://img.shields.io/badge/%F0%9F%96%A5%20GitHub-MU--LLaMA-white">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        We utilize our model for Music enabled question answering and reasoning.<br>
+                        We compare its performance against other audio enabled question answering models,<br>
+                        namely, the Listen, Think and Understant (LTU) model and the LLaMA Adapter model.<br>
+                        The comparison is done on the MTG-Jamendo dataset which has no overlap with our training data.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; align-content: center">
+            <table id="musicqa-samples" class="table table-hover" style="width: 90%; margin: auto">
+                <tr>
+                    <th scope="col" style="width: 7%">Music & Question</th>
+                    <th scope="col" style="width: 31%">MU-LLaMA</th>
+                    <th scope="col" style="width: 31%">LLaMA Adapter</th>
+                    <th scope="col" style="width: 31%">LTU</th>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Describe the audio in detail</b>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musicqa1.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is described as being fast and danceable.
+                        The music is a mix of electronic and synth sounds, with a steady beat and a variety of percussion.
+                    </td>
+                    <td>
+                        The music in the image is a hip-hop beat, featuring a synthesized sound with a strong bass line.
+                        The sound is characterized by a mix of electronic and urban elements, making it suitable for a DJ set or a music video.
+                    </td>
+                    <td>
+                        The music is a mix of different instruments and sounds, with a steady beat and a clear melody
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Who or what is the target audience for this audio?</b>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musicqa2.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        The target audience for this audio is likely hard rock and heavy metal fans who enjoy fast-paced, energetic music with a strong emphasis on drums and bass.
+                    </td>
+                    <td>
+                        The target audience for this audio is teenagers.
+                    </td>
+                    <td>
+                        The target audience for this audio is not specified in the given audio events.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>What type of dance music is it?</b>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musicqa3.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        It is a type of dance music that is commonly associated with electronic and techno genres.
+                    </td>
+                    <td>
+                        The music is a jazz-infused tune, which is a type of music that combines elements of jazz and blues with contemporary styles.
+                    </td>
+                    <td>
+                        It is not specified in the given audio clip.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>What do you hear in the audio?</b>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musicqa4.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        The audio features a male vocalist singing in a punk rock style.
+                        The audio is a heavy metal song with a fast tempo, intense guitar riffs, and heavy bass and drum beats.
+                        The vocals are aggressive and powerful, with a strong emphasis on the lower register.
+                    </td>
+                    <td>
+                        In the audio, you can hear the sound of a motorcycle engine revving, and the words "surf" and "life" are also visible in the background.
+                    </td>
+                    <td>
+                        Labels: Musical instrument; Music; Guitar
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>How does the soundtrack build tension and drama?</b>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musicqa5.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        The soundtrack uses a combination of slow, haunting melodies and subtle changes in instrumentation to create a sense of tension and drama.
+                        The soundtrack builds tension and drama by using a variety of techniques, including the use of orchestral instruments, a slow tempo, and a sense of foreboding.
+                    </td>
+                    <td>
+                        The soundtrack in the image is composed of a series of musical notes, which creates a sense of tension and drama.
+                        The repetition of the same note in a row adds to the intensity and builds anticipation.
+                        This type of composition is often used in film scores to enhance the overall experience and convey a particular mood or emotion.
+                    </td>
+                    <td>
+                        The soundtrack builds tension and drama by using a combination of different musical elements, such as suspenseful melodies, dramatic crescendos, and sudden changes in tempo.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!--
+        End Model QA
+        ==================================== -->
+
+
+    <!--
+        Model Captioning
+        ==================================== -->
+
+    <section id="modelcaptioning" class="modelinfo">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>Music Captioning with MU-LLaMA</h2>
+                    <div class="devider"><i class="fa fa-file-text fa-lg"></i></div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        We use our MU-LLaMA model to caption music files in order to create large open source Text-to-Music generation datasets.<br>
+                        Here we compare the captions generated by different models
+                        such as the Listen, Think and Understand model and the LP-MusicCaps model
+                        on samples from the opensource FMA dataset.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; align-content: center">
+            <table id="musiccap-samples" class="table table-hover" style="width: 90%; margin: auto">
+                <tr>
+                    <th scope="col" style="width: 7%">Music</th>
+                    <th scope="col" style="width: 31%">MU-LLaMA</th>
+                    <th scope="col" style="width: 31%">LP-MusicCaps</th>
+                    <th scope="col" style="width: 31%">LTU</th>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musiccap1.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is a slow and steady beat with a bass and drums rhythm. The melody is played by a synth and the music is accompanied by a digital drum.
+                    </td>
+                    <td>
+                        The low quality recording features a electro song that consists of a punchy "4 on the floor" kick pattern, short snare hit and offbeat shimmering hi hats.
+                        It sounds groovy, weird and like something you would hear in nightclubs.
+                    </td>
+                    <td>
+                        The music is characterized by its dynamic and balanced sound, with a rich and full texture, and a clear and distinct pitch and timbre.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musiccap2.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is a slow tempo with a steady rhythm.
+                        The instrument used is an acoustic guitar.
+                        The mood of the music is melancholic and nostalgic.
+                    </td>
+                    <td>
+                        This is a guitar cover video. There are no vocals in this piece.
+                        The acoustic guitar is playing a mellow tune with the heavy use of arpeggios.
+                        The atmosphere is gentle and relaxing.
+                    </td>
+                    <td>
+                        The music is being played on a guitar with a mellow sound.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musiccap3.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is slow and melancholic with a sense of longing and nostalgia. The music is played on a piano.
+                    </td>
+                    <td>
+                        The low quality recording features a reverberant piano melody playing. It sounds like a cover and it is energetic.
+                    </td>
+                    <td>
+                        The music is rich and full-bodied, and it is a piece of music that is played.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musiccap4.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is a blues-rock song with a groovy bass line, electric guitar playing rhythm, and a keyboard playing a bluesy tune.
+                        The tempo is medium and the mood of the music is groovy.
+                    </td>
+                    <td>
+                        The low quality recording features a reggae song that consists of a flat male vocal singing over shimmering shakers, groovy bass, wide electric guitar melody, punchy kick and snare hits, shimmering hi hats and simple bass.
+                        It sounds happy, fun and joyful - like something kids would listen to.
+                    </td>
+                    <td>
+                        The music is described as rich and full of resonant frequencies, with a male singing in a deep voice.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls class="embed-responsive-item">
+                            <source src="assets/audios/musiccap5.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        The music is a fast-paced rock song with a strong beat and guitar riffs.
+                        The vocals are aggressive and energetic, with a strong emphasis on the lyrics.
+                        The drums are powerful and driving, providing a solid foundation for the rest of the music.
+                    </td>
+                    <td>
+                        This song contains an acoustic drum playing a simple rock groove along with an e-bass.
+                        A e-guitar is playing a short melody panned to the right side of the speakers.
+                        Then a male voice starts singing in a higher key. This song may be playing live at a concert.
+                    </td>
+                    <td>
+                        The music is described as rich and full of resonant frequencies, which is a common characteristic of rock music.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!--
+        End Model QA
+        ==================================== -->
+
+    <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+    <!-- Essential jQuery Plugins
+		================================================== -->
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Single Page Nav -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery.fancybox.pack -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- jquery.mixitup.min -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- jquery.parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- jquery.countTo -->
+    <script src="js/jquery-countTo.js"></script>
+    <!-- jquery.appear -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Contact form validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- jquery easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jquery easing -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 120,          // distance to the element when triggering the animation (default is 0)
+            mobile: false,       // trigger animations on mobile devices (default is true)
+            live: true        // act on asynchronously loaded content (default is true)
+        }
+        );
+        wow.init();
+    </script>
+    <!-- Custom Functions -->
+    <script type="module" src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            /* ========================================================================= */
+            /*	Contact Form
+            /* ========================================================================= */
+
+            $('#contact-form').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "come on, you have a name don't you?",
+                        minlength: "your name must consist of at least 2 characters"
+                    },
+                    email: {
+                        required: "no email, no message"
+                    },
+                    message: {
+                        required: "um...yea, you have to write something to send this form.",
+                        minlength: "thats all? really?"
+                    }
+                },
+                submitHandler: function (form) {
+                    $(form).ajaxSubmit({
+                        type: "POST",
+                        data: $(form).serialize(),
+                        url: "process.php",
+                        success: function () {
+                            $('#contact-form :input').attr('disabled', 'disabled');
+                            $('#contact-form').fadeTo("slow", 0.15, function () {
+                                $(this).find(':input').attr('disabled', 'disabled');
+                                $(this).find('label').css('cursor', 'default');
+                                $('#success').fadeIn();
+                            });
+                        },
+                        error: function () {
+                            $('#contact-form').fadeTo("slow", 0.15, function () {
+                                $('#error').fadeIn();
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

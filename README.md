@@ -1,2 +1,2 @@
-# M2UGen-Demo
-This is the demo page for the M2UGen model
+# MU-LLaMA-Demo
+This is the demo page for the MU-LLaMA model
