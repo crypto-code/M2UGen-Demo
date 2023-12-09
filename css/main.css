@@ -84,6 +84,9 @@ body > section,
 
 .sec-sub-title {
 	margin: 35px 0 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sec-sub-title p {
@@ -446,104 +449,41 @@ top: -8px;
 
 
 /*=========================================
-	Generation Form
+	Dataset Samples
 ==========================================*/
 
-.generate-form {}
+.dataset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
 
-.generate-form h3 {
-    color: #062033;
+.dataset-entry {
+    align-content: flex-start;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+.dataset-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.human-label {
     font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 25px;
-}
-
-.generate-form .input-group {
-    width: 100%;
-}
-
-.generate-form .input-group h4 {
-    float: left;
     font-weight: bold;
 }
 
-.generate-form .form-control {
-    border-color: -moz-use-text-color -moz-use-text-color #cccccc;
-    border-radius: 0;
-    border-style: none none solid;
-    border-width: 0 0 1px;
-    box-shadow: none;
-    margin-bottom: 10px;
-    float: left;
-}
-
-.generate-form .input-field {
-    width: 48%;
-    float: left;
-    margin-right: 4%;
-}
-
-.generate-form .input-field:last-child {
-    margin-right: 0;
-}
-
-.generate-form .form-control.error {
-    border-bottom-color: #c0392b;
-}
-
-label.error {
-    color: #c0392b;
-    font-weight: normal;
-    text-transform: capitalize;
-}
-
-.generate-form .form-submit {
-    background: url("../img/run.png") no-repeat scroll 0 15px transparent;
-    background-size: 30px 30px;
-    border: 0 none;
-    color: #000;
-    font-size: 16px;
-    line-height: 40px;
-    padding: 10px;
-    text-align: right;
-    width: 120px;
-}
-
-.generated-qa {
+.human-text {
+    font-size: 18px;
     text-align: left;
-}
-
-.generated-qa div {
-    margin-bottom: 25px;
-}
-
-.generated-qa div h4 {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
-.generated-qa div .question {
-    font-weight: 600;
-}
-
-.generated-qa div .answer {
-    font-weight: 400;
-}
-
-.form-check-label {
-    margin-right: 40px;
-    font-size: 16px;
-}
-
-.overlay-container {
-    position: relative;
-}
-
-#closed-qa-instructions, #open-qa-instructions, #caption-instructions {
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
 }
 
 /*=========================================

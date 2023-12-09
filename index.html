@@ -16,7 +16,7 @@
     <!-- Meta Description -->
     <meta name="description" content="M2UGen Demo Page">
     <!-- add icon link -->
-    <link rel = "icon" href = "https://github.com/crypto-code/M2UGen-Demo/blob/main/img/logo.png?raw=true" type = "image/x-icon">
+    <link rel = "icon" href = "https://raw.githubusercontent.com/crypto-code/M2UGen-Demo/main/img/logo.png" type = "image/x-icon">
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -104,7 +104,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <!-- single slide -->
-                <div class="item active" style="background: #131b1e;">
+                <div class="item active" style="background: #131b1e; min-height: 110vh">
                     <div class="carousel-caption">
                         <img src="img/logo.png" height="40%" alt="MU-LLaMA" data-wow-duration="700ms" class="wow fadeInDown animated">
                         <br/>
@@ -151,17 +151,18 @@
                 </div>
 
                 <!-- service item -->
-                <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+                <div class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
                     <div class="service-item">
                         <div class="service-icon">
                             <i class="fa fa-rocket fa-2x"></i>
                         </div>
 
                         <div class="service-desc">
-                            <h3>MU-LLaMA Model</h3>
+                            <h3>Music Generation and Understanding</h3>
                             <p>
-                                We introduce the MU-LLaMA model, an exceptional advancement capable
-                                of performing music question answering and music captioning tasks
+                                We introduce the M<sup>2</sup>UGen framework, an advancement capable of simultaneously
+                                encompassing music understanding and multi-modal music generation tasks,
+                                aiming to assist users in music related artistic creation.
                             </p>
                         </div>
                     </div>
@@ -169,36 +170,20 @@
                 <!-- end service item -->
 
                 <!-- service item -->
-                <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                <div class="col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
                     <div class="service-item">
                         <div class="service-icon">
                             <i class="fa fa-database fa-2x"></i>
                         </div>
 
                         <div class="service-desc">
-                            <h3>MusicQA Dataset</h3>
+                            <h3>Music Oriented Datasets</h3>
                             <p>
-                                We propose a systematic approach for creating the music question answering
-                                dataset, crucial for training the MU-LLaMA model,
-                                from existing music captioning and tagging datasets
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end service item -->
-
-                <!-- service item -->
-                <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
-                        </div>
-
-                        <div class="service-desc">
-                            <h3>T2M-Gen Dataset Generation</h3>
-                            <p>
-                                We demonstrate the use of the MU-LLaMA model to generate music captions
-                                in various formats required for developing Text-to-music generation models
+                                We propose a systematic approach for generating large
+                                multi-modal music oriented instruction datasets for
+                                the training of our M<sup>2</sup>UGen model including
+                                the largest publicly available music captioning dataset
+                                containing 1.2k plus hours of music using the MU-LLaMA model.
                             </p>
                         </div>
                     </div>
@@ -221,252 +206,243 @@
         <div class="container">
             <div class="row">
                 <div class="sec-title text-center">
-                    <h2>MusicQA Dataset Generation</h2>
+                    <h2>Music Oriented Datasets</h2>
                     <div class="devider">
-                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/mosaicml/mpt-7b-chat">
-                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MPT--7B%20Chat%20Model-blue">
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/datasets/M2UGen/MUCaps">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MUCaps%20Dataset-blue">
+                        </a>
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/datasets/M2UGen/MUEdit">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MUEdit%20Dataset-green">
+                        </a>
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/datasets/M2UGen/MUImage">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MUImage%20Dataset-yellow">
+                        </a>
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/datasets/M2UGen/MUVideo">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MUVideo%20Dataset-purple">
                         </a>
                     </div>
                 </div>
 
                 <div class="sec-sub-title text-center">
                     <p class="mb50">
-                        We use MosaicML's MPT-7B-Chat Model <a href="https://huggingface.co/mosaicml/mpt-7b-chat"><i class="fa fa-rocket" style="color: gray"></i></a>
-                        to generate our MusicQA dataset.
+                        We use the MU-LLaMA Model <a href="https://github.com/crypto-code/MU-LLaMA"><i class="fa fa-rocket" style="color: gray"></i></a>
+                        along with MosaicML's MPT-7B-Chat Model <a href="https://huggingface.co/mosaicml/mpt-7b-chat"><i class="fa fa-rocket" style="color: gray"></i></a>
+                        to generate our Music Oriented datasets.
+                        <br/>
+                        We also utilize BLIP Image Captioning Model <a href="https://huggingface.co/Salesforce/blip-image-captioning-base"><i class="fa fa-rocket" style="color: gray"></i></a>
+                        and VideoMAE Captioning Model <a href="https://huggingface.co/MCG-NJU/videomae-base"><i class="fa fa-rocket" style="color: gray"></i></a> to caption the respective modalities.
                     </p>
                     <p>
-                        <i class="fa fa-tag fa-lg"></i> Tags or Captions &emsp;
+                        <i class="fa fa-music fa-lg"></i> Music File &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
-                        <i class="fa fa-rocket fa-lg"></i>  MPT-7B Model &emsp;
+                        <i class="fa fa-rocket fa-lg"></i>  MU-LLaMA Model &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
-                        <i class="fa fa-question fa-lg"></i> QA Pairs
+                        <i class="fa fa-file-text fa-lg"></i> Music Captions
+                    </p>
+                    <p>
+                        <i class="fa fa-music fa-lg"></i> Image File &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-rocket fa-lg"></i>  BLIP Image Captioning Model &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-file-text fa-lg"></i> Image Captions
+                    </p>
+                    <p>
+                        <i class="fa fa-music fa-lg"></i> Video File &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-rocket fa-lg"></i>  VideoMAE Captioning Model &emsp;
+                        <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                        <i class="fa fa-file-text fa-lg"></i> Video Captions
                     </p>
                 </div>
 
             </div>
         </div>
 
-        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
-            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Closed-ended Question Answer Pair Generation</h3>
-            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">MUCaps Dataset</h3>
+            <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
-                <div class="generate-form">
-                    <form action="" id="generate-form">
-                        <div class="form-check pull-left mb50">
-                            <label class="form-check-label">Generate QA From: </label>
-                            <input class="form-check-input" type="radio" name="generateFrom" id="captionRadio" checked>
-                            <label class="form-check-label" for="captionRadio">
-                                Caption
-                            </label>
-                            <input class="form-check-input" type="radio" name="generateFrom" id="tagRadio">
-                            <label class="form-check-label" for="tagRadio">
-                                List of Tags
-                            </label>
-                        </div>
-                        <div class="input-group mb50">
-                            <h4>Instructions: </h4>
-                            <br><br>
-                            <div id="closed-qa-instructions">
-                                <b>-</b> You are given a sentence describing an audio<br>
-                                <b>-</b> You will give answers from the audio to these questions based on the sentence<br>
-                                <div style="margin-left: 30px">
-                                    <b>-</b> Describe the music<br>
-                                    <b>-</b> Describe the music in detail<br>
-                                    <b>-</b> What do you hear in the audio<br>
-                                    <b>-</b> What can be inferred from the audio<br>
-                                </div>
-                                <b>-</b> The answers should be numbered
+                <div class="dataset">
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_000005.mp3">
+                                </audio>
                             </div>
                         </div>
-                        <div class="input-group mb50" id="caption-div">
-                            <h4>Music Caption:</h4>
-                            <textarea name="caption" id="caption" placeholder="Music Caption" class="form-control">The music is a slow instrumental jazz piece containing violin and electronic sounds.</textarea>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a fast-paced and energetic instrumental rock song with a heavy guitar riff and drums.
+                            </div>
                         </div>
-                        <div class="input-group mb50" id="tag-div" style="opacity: 0; display: none">
-                            <h4>List of Tags:</h4>
-                            <input name="tags" id="tags" placeholder="List of tags"
-                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
-                                   class="form-control"/>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_000970.mp3">
+                                </audio>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="submit" id="generate" class="pull-left form-submit" value="Generate">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a fast-paced techno song with a strong beat and electronic elements.
+                            </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
-                 data-wow-delay="300ms">
-                <div class="sec-sub-title text-center">
-                    <div class="generated-qa">
-                        <div id="closed-qa-loader" class="loader" style="visibility: hidden">
-                            <img src="img/preloader.gif" alt="Preloader">
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_002705.mp3">
+                                </audio>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="question"><b>Q1</b>. Describe the music</h4>
-                            <h4 class="answer"><b>A1</b>.
-                                <span id="q1">
-                                    The music is a slow instrumental jazz piece containing violin and electronic sounds.
-                                </span></h4>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a slow and soothing melody with a steady rhythm.
+                                The instruments used are drums, cymbals, and a flute. The tempo is slow and steady, creating a calming atmosphere.
+                                The mood of the song is peaceful and serene, evoking a sense of relaxation and tranquility.
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="question"><b>Q2</b>. Describe the music in detail</h4>
-                            <h4 class="answer"><b>A2</b>.
-                                <span id="q2">
-                                The music is a slow-paced instrumental piece that features a violin and electronic sounds. The violin plays a melancholic melody, while the electronic sounds provide a subtle background texture.
-                                </span></h4>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_004410.mp3">
+                                </audio>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="question"><b>Q3</b>. What do you hear in the audio?</h4>
-                            <h4 class="answer"><b>A3</b>.
-                                <span id="q3">
-                                    I hear a violin playing a slow and melancholic melody, accompanied by electronic sounds that provide a subtle background texture.
-                                </span></h4>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a mix of electronic and ambient sounds, with a focus on synthesizers and drums.
+                                The tempo is slow and the mood is calm and soothing.
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="question"><b>Q4</b>. What can be inferred from the audio?</h4>
-                            <h4 class="answer"><b>A4</b>.
-                                <span id="q4">
-                                    From the audio, it can be inferred that the music is intended to be relaxing and introspective, with a focus on the emotional expression of the violin. The use of electronic sounds suggests a modern twist on traditional jazz music.
-                                </span></h4>
-                        </div>
-                        <br>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
-            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Open-ended Question Answer Pair Generation</h3>
-            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">MUEdit Dataset</h3>
+            <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
-                <div class="generate-form">
-                    <form action="" id="open-generate-form">
-                        <div class="form-check pull-left mb50">
-                            <label class="form-check-label">Generate QA From: </label>
-                            <input class="form-check-input" type="radio" name="generateFrom" id="open-captionRadio" checked>
-                            <label class="form-check-label" for="open-captionRadio">
-                                Caption
-                            </label>
-                            <input class="form-check-input" type="radio" name="generateFrom" id="open-tagRadio">
-                            <label class="form-check-label" for="open-tagRadio">
-                                List of Tags
-                            </label>
-                        </div>
-                        <div class="input-group mb50">
-                            <h4>Instructions: </h4>
-                            <br><br>
-                            <div id="open-qa-instructions">
-                                <b>-</b> You are given a sentence describing an audio<br>
-                                <b>-</b> You will create 5 questions related to the audio based on the sentence along with answers<br>
-                                <b>-</b> The questions should be relating to things like tempo of the music, mood of the music, instruments used, inference, etc<br>
-                                <b>-</b> The question answers should be long form<br>
-                                <b>-</b> The question answers should be numbered
+                <div class="dataset">
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_000005.mp3">
+                                </audio>
                             </div>
                         </div>
-                        <div class="input-group mb50" id="caption-div-open">
-                            <h4>Music Caption:</h4>
-                            <textarea name="caption" id="caption-open" placeholder="Music Caption" class="form-control">The music is a slow instrumental jazz piece containing violin and electronic sounds.</textarea>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a fast-paced and energetic instrumental rock song with a heavy guitar riff and drums.
+                            </div>
                         </div>
-                        <div class="input-group mb50" id="tag-div-open" style="opacity: 0; display: none">
-                            <h4>List of Tags:</h4>
-                            <input name="tags" id="tags-open" placeholder="List of tags"
-                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
-                                   class="form-control"/>
-                        </div>
-                        <div class="input-group">
-                            <input type="submit" id="generate-open" class="pull-left form-submit" value="Generate">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
-                 data-wow-delay="300ms">
-                <div class="sec-sub-title text-center">
-                    <div class="generated-qa">
-                        <div id="open-qa-loader" class="loader" style="visibility: hidden">
-                            <img src="img/preloader.gif" alt="Preloader">
-                        </div>
-                        <div>
-                            <h4 class="question"><b>Q1</b>. <span id="q1c"> What is the tempo of the music?</span></h4>
-                            <h4 class="answer"><b>A1</b>.
-                                <span id="a1c">
-                                    The music is a slow piece, which means it has a tempo that is played at a leisurely pace.
-                                </span></h4>
-                        </div>
-                        <div>
-                            <h4 class="question"><b>Q2</b>. <span id="q2c"> What instruments are used in this piece?</span></h4>
-                            <h4 class="answer"><b>A2</b>.
-                                <span id="a2c">
-                                The piece contains violin and electronic sounds. The violin adds a classical touch to the music, while the electronic sounds give it a modern twist.
-                                </span></h4>
-                        </div>
-                        <div>
-                            <h4 class="question"><b>Q3</b>. <span id="q3c">What is the mood of the music?</span></h4>
-                            <h4 class="answer"><b>A3</b>.
-                                <span id="a3c">
-                                    The slow tempo and instrumental nature of the piece creates a calm and relaxed mood. The combination of violin and electronic sounds also gives it an introspective and contemplative feel.
-                                </span></h4>
-                        </div>
-                        <div>
-                            <h4 class="question"><b>Q4</b>. <span id="q4c">What can you infer about the genre of the music?</span></h4>
-                            <h4 class="answer"><b>A4</b>.
-                                <span id="a4c">
-                                    The use of violin and electronic sounds in the piece suggests that it belongs to the genre of contemporary or experimental jazz.
-                                </span></h4>
-                        </div>
-                        <div>
-                            <h4 class="question"><b>Q5</b>. <span id="q5c">How does the use of electronic sounds affect the overall sound of the piece?</span></h4>
-                            <h4 class="answer"><b>A5</b>.
-                                <span id="a5c">
-                                    The use of electronic sounds adds a unique and distinct quality to the piece. It enhances the overall sound by providing a contrast to the classical sound of the violin. This contrast creates a dynamic and interesting interplay between the two sounds, making the piece stand out.
-                                </span></h4>
-                        </div>
-                        <br>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid;">
-            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">Caption Generation from Tags</h3>
-            <div class="col-lg-7 col-md-6 col-xs-12 text-center wow fadeInDown animated" data-wow-duration="500ms"
-                 data-wow-delay="300ms">
-                <div class="generate-form">
-                    <form action="" id="caption-generate-form">
-                        <div class="input-group mb50">
-                            <h4>Instructions: </h4>
-                            <br><br>
-                            <div id="caption-instructions">
-                                <b>-</b> You are given a list of tags describing an audio<br>
-                                <b>-</b> You will create a short one line description of the audio based on the captions<br>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_000970.mp3">
+                                </audio>
                             </div>
                         </div>
-                        <div class="input-group mb50" id="caption-tag-div">
-                            <h4>List of Tags:</h4>
-                            <input name="tags" id="caption-tags" placeholder="List of tags"
-                                   value="jazz, ambient, electronic, violin, instrumental, sax, slow, jazzy"
-                                   class="form-control"/>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a fast-paced techno song with a strong beat and electronic elements.
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="submit" id="caption-generate" class="pull-left form-submit" value="Generate">
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_002705.mp3">
+                                </audio>
+                            </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
-                 data-wow-delay="300ms">
-                <div class="sec-sub-title text-center">
-                    <div class="generated-qa">
-                        <div id="caption-loader" class="loader" style="visibility: hidden">
-                            <img src="img/preloader.gif" alt="Preloader">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a slow and soothing melody with a steady rhythm.
+                                The instruments used are drums, cymbals, and a flute. The tempo is slow and steady, creating a calming atmosphere.
+                                The mood of the song is peaceful and serene, evoking a sense of relaxation and tranquility.
+                            </div>
                         </div>
-                        <div>
-                            <h4><b>Caption</b></h4>
-                            <h4 class="answer">
-                                <span id="caption-ans">
-                                    Soulful jazz and ambient electronic violin with saxophone, slow and jazzy.
-                                </span></h4>
+                    </div>
+
+                    <div class="dataset-entry">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/mucaps/mucaps_004410.mp3">
+                                </audio>
+                            </div>
                         </div>
-                        <br>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                The music is a mix of electronic and ambient sounds, with a focus on synthesizers and drums.
+                                The tempo is slow and the mood is calm and soothing.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -486,36 +462,27 @@
             <div class="container">
                 <div class="row number-counters">
                     <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                        <h2>MusicQA Dataset Statistics</h2>
+                        <h2>MUCaps Dataset</h2>
                         <div class="devider"><i class="fa fa-dashboard fa-lg"></i></div>
                     </div>
 
                     <!-- first count item -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+                    <div class="col-md-6 col-sm-9 col-xs-18 text-center wow fadeInUp animated"
                          data-wow-duration="500ms">
                         <div class="counters-item">
                             <i class="fa fa-music fa-3x"></i>
-                            <strong data-speed="2.5e3" data-to="12542">0</strong>
+                            <strong data-speed="2.5e3" data-to="21966">0</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
                             <p>Music Files</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+                    <div class="col-md-6 col-sm-9 col-xs-18 text-center wow fadeInUp animated" data-wow-duration="500ms"
                          data-wow-delay="300ms">
                         <div class="counters-item">
                             <i class="fa fa-clock-o fa-3x"></i>
-                            <strong data-speed="2.8e3" data-to="76.15" decimals="2">0</strong>
+                            <strong data-speed="2.8e3" data-to="1273.78" decimals="2">0</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
                             <p>Hours of Music</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
-                         data-wow-delay="600ms">
-                        <div class="counters-item">
-                            <i class="fa fa-question-circle fa-3x"></i>
-                            <strong data-speed="2.2e3" data-to="112878">0</strong>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Question Answer Pairs</p>
                         </div>
                     </div>
                     <!-- end first count item -->
