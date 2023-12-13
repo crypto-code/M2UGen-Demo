@@ -674,12 +674,110 @@ audio {
 
 .modelinfo {
     background-color: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modelinfo figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
 }
 
 figcaption {
     margin-top: 20px;
-    font-size: medium;
+    font-size: large;
     font-weight: bold;
+}
+
+/*=========================================
+	Gradio Demo
+==========================================*/
+
+.t2m {
+    background: white;
+}
+
+.t2m-me {
+    background-color: #f4f7f9;
+}
+
+.gradio-demo-container {
+    margin:auto;
+    width: 80%;
+    gap: 5%;
+    columns: 2 45vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.gradio-demo {
+    background: rgb(32, 41, 55);
+    border: rgb(57, 65, 80) 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100%;
+    gap: 20px;
+    font-size: medium;
+    border-radius: 20px;
+    break-inside: avoid;
+    margin: 20px 0;
+    box-shadow: grey 7px 7px;
+    vertical-align: middle;
+}
+
+.gradio-user-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.gradio-bot-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.gradio-user-row img {
+    width: 40px;
+    height: 40px;
+}
+
+.gradio-bot-row img {
+    width: 70px;
+    height: 70px;
+}
+
+.gradio-user {
+    background: rgb(57, 65, 81);
+    border: rgb(79, 86, 100) 2px solid;
+    padding: 20px;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+    min-width: 50%;
+}
+
+.gradio-bot {
+    background: rgb(18, 24, 39);
+    padding: 20px;
+    color: white;
+    border: rgb(55, 63, 78) 2px solid;
+    border-radius: 20px 20px 20px 0;
+    min-width: 50%;
 }
 
 /*=========================================
