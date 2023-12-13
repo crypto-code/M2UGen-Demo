@@ -240,14 +240,14 @@
                         <i class="fa fa-file-text fa-lg"></i> Music Captions
                     </p>
                     <p>
-                        <i class="fa fa-music fa-lg"></i> Image File &emsp;
+                        <i class="fa fa-image fa-lg"></i> Image File &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
                         <i class="fa fa-rocket fa-lg"></i>  BLIP Image Captioning Model &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
                         <i class="fa fa-file-text fa-lg"></i> Image Captions
                     </p>
                     <p>
-                        <i class="fa fa-music fa-lg"></i> Video File &emsp;
+                        <i class="fa fa-file-video-o fa-lg"></i> Video File &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
                         <i class="fa fa-rocket fa-lg"></i>  VideoMAE Captioning Model &emsp;
                         <i class="fa fa-arrow-right fa-lg"></i> &emsp;
@@ -259,11 +259,13 @@
         </div>
 
         <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
-            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">MUCaps Dataset</h3>
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold; text-decoration: black underline;">
+                MUCaps Dataset
+            </h3>
             <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
                 <div class="dataset">
-                    <div class="dataset-entry">
+                    <div class="dataset-entry left-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
@@ -284,7 +286,7 @@
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry left-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
@@ -305,7 +307,7 @@
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry left-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
@@ -328,7 +330,7 @@
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry left-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
@@ -354,19 +356,33 @@
         </div>
 
         <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
-            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold">MUEdit Dataset</h3>
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold; text-decoration: black underline;">
+                MUImage Dataset
+            </h3>
+            <div class="sec-sub-title text-center">
+                <p>
+                    <i class="fa fa-image fa-lg"></i> Image Captions &emsp;
+                    <i class="fa fa-plus fa-lg"></i> &emsp;
+                    <i class="fa fa-music fa-lg"></i> Music Captions &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-rocket fa-lg"></i>  MPT-7B Model &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-file-text fa-lg"></i> MUImage Instructions
+                </p>
+            </div>
             <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
                 <div class="dataset">
-                    <div class="dataset-entry">
+                    <div class="dataset-entry right-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
                             </div>
                             <div class="human-text">
-                                <audio controls class="embed-responsive-item">
-                                    <source src="assets/mucaps/mucaps_000005.mp3">
-                                </audio>
+                                Generate a music for the image that is ethereal and spacey, with a focus on the synthesizers and bass, and a hint of a pulsing beat.
+                            </div>
+                            <div class="human-text">
+                                <img src="assets/muimage/1OeqDC6vmto.jpg" width="80%">
                             </div>
                         </div>
                         <div class="dataset-row">
@@ -374,63 +390,276 @@
                                 M<sup>2</sup>UGen:
                             </div>
                             <div class="human-text">
-                                The music is a fast-paced and energetic instrumental rock song with a heavy guitar riff and drums.
+                                Here is a music that is space-themed and could fit well with the image of a bright star in the center of a galaxy.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muimage/1OeqDC6vmto.mp3">
+                                </audio>
                             </div>
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry right-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
                             </div>
                             <div class="human-text">
-                                <audio controls class="embed-responsive-item">
-                                    <source src="assets/mucaps/mucaps_000970.mp3">
-                                </audio>
+                                Generate a music for the image that is full of energy and enthusiasm, just like the folk song.
+                                Use the instruments shown in the image to create a lively and upbeat tune that will get the audience dancing and singing along.
+                            </div>
+                            <div class="human-text">
+                                <img src="assets/muimage/37L5HYG7WN0.jpg" width="80%">
                             </div>
                         </div>
+
                         <div class="dataset-row">
                             <div class="human-label">
                                 M<sup>2</sup>UGen:
                             </div>
                             <div class="human-text">
-                                The music is a fast-paced techno song with a strong beat and electronic elements.
+                                Here is a music that is perfect for a lively and upbeat folk song with a catchy melody.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muimage/37L5HYG7WN0.mp3">
+                                </audio>
                             </div>
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry right-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
                             </div>
                             <div class="human-text">
-                                <audio controls class="embed-responsive-item">
-                                    <source src="assets/mucaps/mucaps_002705.mp3">
-                                </audio>
+                                Generate a music for the image that is slow, melancholic, and minimalist with a conductor leading the orchestra.
+                            </div>
+                            <div class="human-text">
+                                <img src="assets/muimage/1Vrda51cyEY.jpg" width="80%">
                             </div>
                         </div>
+
                         <div class="dataset-row">
                             <div class="human-label">
                                 M<sup>2</sup>UGen:
                             </div>
                             <div class="human-text">
-                                The music is a slow and soothing melody with a steady rhythm.
-                                The instruments used are drums, cymbals, and a flute. The tempo is slow and steady, creating a calming atmosphere.
-                                The mood of the song is peaceful and serene, evoking a sense of relaxation and tranquility.
+                                Here is a music that is reminiscent of the slow and melancholic atmosphere of minimalist music, with a focus on a single conductor leading the orchestra.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muimage/1Vrda51cyEY.mp3">
+                                </audio>
                             </div>
                         </div>
                     </div>
 
-                    <div class="dataset-entry">
+                    <div class="dataset-entry right-justify">
                         <div class="dataset-row">
                             <div class="human-label">
                                 Human:
                             </div>
                             <div class="human-text">
+                                Generate a music for the image that is reminiscent of the man's emotions, capturing the sense of peace and tranquility in the living room.
+                            </div>
+                            <div class="human-text">
+                                <img src="assets/muimage/1i4q8iJRlNE.jpg" width="80%">
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is perfect for relaxing and unwinding, similar to the image of a man playing a guitar in a cozy living room.
+                            </div>
+                            <div class="human-text">
                                 <audio controls class="embed-responsive-item">
-                                    <source src="assets/mucaps/mucaps_004410.mp3">
+                                    <source src="assets/muimage/1i4q8iJRlNE.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold; text-decoration: black underline;">
+                MUVideo Dataset
+            </h3>
+            <div class="sec-sub-title text-center">
+                <p>
+                    <i class="fa fa-file-video-o fa-lg"></i> Video Captions &emsp;
+                    <i class="fa fa-plus fa-lg"></i> &emsp;
+                    <i class="fa fa-music fa-lg"></i> Music Captions &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-rocket fa-lg"></i>  MPT-7B Model &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-file-text fa-lg"></i> MUVideo Instructions
+                </p>
+            </div>
+            <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="dataset">
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Generate a music for the video that is traditional and slow-paced, with a focus on the violin and the man's emotions as he plays.
+                            </div>
+                            <div class="human-text">
+                                <video controls muted class="embed-responsive-item" style="width: 80%">
+                                    <source src="assets/muvideo/56fxntZ4QQ8.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is reminiscent of a classical piece, perfect for a scene like this where a person is focused on playing an instrument.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muvideo/56fxntZ4QQ8.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Generate a music for the video that is slow, soothing, and has a steady rhythm like the guitar's strumming.
+                            </div>
+                            <div class="human-text">
+                                <video controls muted class="embed-responsive-item" style="width: 80%">
+                                    <source src="assets/muvideo/1UM7hGntrBw.mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is perfect for meditation or relaxation.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muvideo/1UM7hGntrBw.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Generate a music for the video that is fast-paced and energetic, with a strong beat and aggressive guitar riffs.
+                            </div>
+                            <div class="human-text">
+                                <video controls muted class="embed-responsive-item" style="width: 80%">
+                                    <source src="assets/muvideo/1_8GOtHqMwo.mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is perfect for a high-energy and aggressive game like the one in the video,
+                                with a strong beat and aggressive guitar riffs to match the intensity of the game.                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muvideo/1_8GOtHqMwo.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Generate a music for the video that is fast-paced and upbeat,
+                                with a catchy rhythm like the one in the instrumental,
+                                but with a focus on the drums and piano in the video.
+                            </div>
+                            <div class="human-text">
+                                <video controls muted class="embed-responsive-item" style="width: 80%">
+                                    <source src="assets/muvideo/1y390lxxrjY.mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is perfect for a dance party or a lively performance.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muvideo/1y390lxxrjY.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb50" style="box-shadow: 5px 10px #758eb0; border: 1px solid; padding-bottom: 25px">
+            <h3 class="sec-sub-title text-center mb50 bounceIn animated" style="font-weight: bold; text-decoration: black underline;">
+                MUEdit Dataset
+            </h3>
+            <div class="sec-sub-title text-center">
+                <p>
+                    <i class="fa fa-music fa-lg"></i> Music Captions &emsp;
+                    <i class="fa fa-plus fa-lg"></i> &emsp;
+                    <i class="fa fa-music fa-lg"></i> Music Captions &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-rocket fa-lg"></i>  MPT-7B Model &emsp;
+                    <i class="fa fa-arrow-right fa-lg"></i> &emsp;
+                    <i class="fa fa-file-text fa-lg"></i> MUEdit Instructions
+                </p>
+            </div>
+            <div class="text-center wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
+                <div class="dataset">
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                To change the input music to the target music, you can slow down the tempo and add more percussion instruments to create a steady and rhythmic beat.
+                                You can also incorporate more melodic elements, such as a keyboard or strings, to create a more balanced sound.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/6XAu7rS_e5A.mp3">
                                 </audio>
                             </div>
                         </div>
@@ -439,8 +668,107 @@
                                 M<sup>2</sup>UGen:
                             </div>
                             <div class="human-text">
-                                The music is a mix of electronic and ambient sounds, with a focus on synthesizers and drums.
-                                The tempo is slow and the mood is calm and soothing.
+                                Here is a music that is a slow and steady beat accompanied by a variety of percussion sounds, including drums, cymbals, and a bassline.
+                            </div>
+                            <div class="human-text">
+                                <audio controls class="embed-responsive-item">
+                                    <source src="assets/muedit/CiGFkFi1uUc.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                To change the input music to the target music, you can use the following instruction:
+                                "Replace the guitar and bass with a piano and add a layer of strings to create a more emotional and intricate melody."
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/DgTM-f4isg4.mp3">
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is a slow, melancholic, and emotional piece with a rich and warm sound, delicate and intricate layers of melody, and a deep and resonant foundation provided by the cello.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/EiyOXccsSLo.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Add Latin American flavor to the input music by incorporating an accordion, keyboard, and bass guitar,
+                                while keeping the fast-paced, upbeat tempo and simple drum beat.
+                                Also, consider adding a tambourine for a playful element.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/DQdJDxCHQ3o.mp3">
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is a fast-paced, upbeat salsa song with a catchy melody and lively rhythm.
+                                The accordion provides a traditional Latin American flavor, while the keyboard and bass guitar add a modern touch.
+                                The rhythm is provided by the acoustic drum beat, which is simple yet effective.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/46WUnVExPWw.mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-entry right-justify">
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                Human:
+                            </div>
+                            <div class="human-text">
+                                Replace the drum solo with a fast-paced and upbeat composition with a catchy melody and rhythm.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/594-oS8n3l4.mp3">
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row">
+                            <div class="human-label">
+                                M<sup>2</sup>UGen:
+                            </div>
+                            <div class="human-text">
+                                Here is a music that is a fast-paced, upbeat, and lively composition with a catchy melody and rhythm.
+                            </div>
+                            <div class="human-text">
+                                <audio controls>
+                                    <source src="assets/muedit/4svQ7BBovwQ.mp3">
+                                </audio>
                             </div>
                         </div>
                     </div>
@@ -462,31 +790,123 @@
             <div class="container">
                 <div class="row number-counters">
                     <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                        <h2>MUCaps Dataset</h2>
+                        <h2>Music Oriented Dataset Stats</h2>
                         <div class="devider"><i class="fa fa-dashboard fa-lg"></i></div>
                     </div>
+                    <div class="data-stats-container">
+                        <div class="data-stats  text-center wow fadeInUp animated"
+                             data-wow-duration="500ms">
+                            <h2 class="sec-sub-title text-center bounceIn animated" style="color: white; text-decoration: white underline;">
+                                MUCaps Dataset
+                            </h2>
+                            <div class=" text-center wow fadeInUp animated"
+                                 data-wow-duration="500ms">
+                                <div class="counters-item">
+                                    <i class="fa fa-music fa-3x"></i>
+                                    <strong data-speed="2.5e3" data-to="21966">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Music Files</p>
+                                </div>
+                            </div>
+                            <div class=" text-center wow fadeInUp animated" data-wow-duration="500ms"
+                                 data-wow-delay="300ms">
+                                <div class="counters-item">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                    <strong data-speed="2.8e3" data-to="1273.78" decimals="2">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Hours of Music</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- first count item -->
-                    <div class="col-md-6 col-sm-9 col-xs-18 text-center wow fadeInUp animated"
-                         data-wow-duration="500ms">
-                        <div class="counters-item">
-                            <i class="fa fa-music fa-3x"></i>
-                            <strong data-speed="2.5e3" data-to="21966">0</strong>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Music Files</p>
+                        <div class="data-stats  text-center wow fadeInUp animated"
+                             data-wow-duration="500ms">
+                            <h2 class="sec-sub-title text-center bounceIn animated" style="color: white; text-decoration: white underline;">
+                                MUImage Dataset
+                            </h2>
+                            <div class=" text-center wow fadeInUp animated"
+                                 data-wow-duration="500ms">
+                                <div class="counters-item">
+                                    <i>
+                                        <span class="fa fa-image fa-3x"></span>
+                                        &emsp;
+                                        <span class="fa fa-music fa-3x"></span>
+                                    </i>
+                                    <strong data-speed="2.5e3" data-to="9966">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Image-Music Pairs</p>
+                                </div>
+                            </div>
+                            <div class=" text-center wow fadeInUp animated" data-wow-duration="500ms"
+                                 data-wow-delay="300ms">
+                                <div class="counters-item">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                    <strong data-speed="2.8e3" data-to="27.72" decimals="2">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Hours of Music</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="data-stats  text-center wow fadeInUp animated"
+                             data-wow-duration="500ms">
+                            <h2 class="sec-sub-title text-center bounceIn animated" style="color: white; text-decoration: white underline;">
+                                MUVideo Dataset
+                            </h2>
+                            <div class=" text-center wow fadeInUp animated"
+                                 data-wow-duration="500ms">
+                                <div class="counters-item">
+                                    <i>
+                                        <span class="fa fa-file-video-o fa-3x"></span>
+                                        &emsp;
+                                        <span class="fa fa-music fa-3x"></span>
+                                    </i>
+                                    <strong data-speed="2.5e3" data-to="13203">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Video-Music Pairs</p>
+                                </div>
+                            </div>
+                            <div class=" text-center wow fadeInUp animated" data-wow-duration="500ms"
+                                 data-wow-delay="300ms">
+                                <div class="counters-item">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                    <strong data-speed="2.8e3" data-to="36.72" decimals="2">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Hours of Music</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="data-stats  text-center wow fadeInUp animated"
+                             data-wow-duration="500ms">
+                            <h2 class="sec-sub-title text-center bounceIn animated" style="color: white; text-decoration: white underline;">
+                                MUEdit Dataset
+                            </h2>
+                            <div class=" text-center wow fadeInUp animated"
+                                 data-wow-duration="500ms">
+                                <div class="counters-item">
+                                    <i>
+                                        <span class="fa fa-music fa-3x"></span>
+                                        &emsp;
+                                        <span class="fa fa-music fa-3x"></span>
+                                    </i>
+                                    <strong data-speed="2.5e3" data-to="10815">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Music Pairs</p>
+                                </div>
+                            </div>
+                            <div class=" text-center wow fadeInUp animated" data-wow-duration="500ms"
+                                 data-wow-delay="300ms">
+                                <div class="counters-item">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                    <strong data-speed="2.8e3" data-to="60.22" decimals="2">0</strong>
+                                    <!-- Set Your Number here. i,e. data-to="56" -->
+                                    <p>Hours of Music</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-9 col-xs-18 text-center wow fadeInUp animated" data-wow-duration="500ms"
-                         data-wow-delay="300ms">
-                        <div class="counters-item">
-                            <i class="fa fa-clock-o fa-3x"></i>
-                            <strong data-speed="2.8e3" data-to="1273.78" decimals="2">0</strong>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Hours of Music</p>
-                        </div>
-                    </div>
-                    <!-- end first count item -->
-
                 </div>
             </div>
         </div>

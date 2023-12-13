@@ -461,17 +461,29 @@ top: -8px;
 }
 
 .dataset-entry {
-    align-content: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 45%;
+    justify-content: center;
+    align-content: center;
+}
+
+.left-justify {
+    align-items: flex-start;
+}
+
+.right-justify {
+    align-items: flex-end;
 }
 
 .dataset-row {
     display: flex;
-    flex-direction: row;
-    gap: 2%;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    align-content: flex-start;
     justify-content: center;
     width: fit-content;
 }
@@ -484,8 +496,25 @@ top: -8px;
 .human-text {
     font-size: 18px;
     text-align: left;
+    padding-left: 5%;
 }
 
+.data-stats-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.data-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 10px 20px 10px;
+    border: white 2px solid;
+    box-shadow: rgba(255, 255, 255, 80%) 5px 5px;
+}
 /*=========================================
 	Our Team Member
 ==========================================*/
