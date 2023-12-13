@@ -711,9 +711,7 @@ figcaption {
     width: 80%;
     gap: 5%;
     columns: 2 45vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    vertical-align: center;
 }
 
 .gradio-demo {
@@ -762,7 +760,7 @@ figcaption {
     height: 70px;
 }
 
-.gradio-user-row img {
+.gradio-user-row img, .gradio-user-row video {
     max-width: 100%;
     max-height: 400px;
 }
@@ -778,6 +776,7 @@ figcaption {
     gap: 10px;
     justify-content: flex-start;
     align-items: flex-start;
+    min-width: 50%;
 }
 
 .gradio-bot {

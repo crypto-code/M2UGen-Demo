@@ -79,13 +79,18 @@
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#body">Home</a></li>
                     <li><a href="#features">Contributions</a></li>
-                    <li><a href="#datagen">MusicQA Dataset</a></li>
-                    <li><a href="#modelinfo">MU-LLaMA Model</a></li>
-                    <li><a href="#modelcaptioning">T2M-Gen Dataset</a></li>
+                    <li><a href="#datagen">Music Oriented Datasets</a></li>
+                    <li><a href="#modelinfo">M<sup>2</sup>UGen Model</a></li>
+                    <li><a href="#t2m">T2M + MU</a></li>
+                    <li><a href="#t2m-me">T2M + MU + ME</a></li>
+                    <li><a href="#i2m">I2M + MU</a></li>
+                    <li><a href="#i2m-me">I2M + MU + ME</a></li>
+                    <li><a href="#v2m">V2M + MU</a></li>
+                    <li><a href="#v2m-me">V2M + MU + ME</a></li>
+                    <li><a href="#me">ME</a></li>
                 </ul>
             </nav>
             <!-- /main nav -->
-
         </div>
     </header>
     <!--
@@ -122,7 +127,7 @@
                         <ul class="social-links text-center">
                             <li><a href="https://github.com/crypto-code/M2UGen"><i class="fa fa-github fa-2x"></i></a></li>
                             <li><a href="https://arxiv.org/abs/2311.11255"><i class="fa fa-paperclip fa-2x"></i></a></li>
-<!--                            <li><a href="https://huggingface.co/datasets/mu-llama/MusicQA"><i class="fa fa-smile-o fa-2x"></i></a></li>-->
+                            <li><a href="https://huggingface.co/M2UGen"><i class="fa fa-smile-o fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -929,6 +934,12 @@
                         <a style="color: rgba(0, 0, 0, 1.0);" href="https://arxiv.org/abs/2311.11255">
                             <img src="https://img.shields.io/badge/%F0%9F%93%8E%20arXiv-Paper-red">
                         </a>
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/M2UGen/M2UGen-MusicGen">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-M2UGen--MusicGen-blue">
+                        </a>
+                        <a style="color: rgba(0, 0, 0, 1.0);" href="https://huggingface.co/M2UGen/M2UGen-AudioLDM2">
+                            <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-M2UGen--AudioLDM2-green">
+                        </a>
                     </div>
                 </div>
 
@@ -1200,7 +1211,6 @@
                         <i class="fa fa-long-arrow-right fa-2x"></i>
                         &emsp;
                         <i class="fa fa-music fa-2x"></i>
-                        &emsp;
                     </div>
                 </div>
 
@@ -1520,7 +1530,6 @@
                         <i class="fa fa-long-arrow-right fa-2x"></i>
                         &emsp;
                         <i class="fa fa-music fa-2x"></i>
-                        &emsp;
                     </div>
                 </div>
 
@@ -1641,7 +1650,551 @@
     </section>
 
     <!--
-        End T2M+MU
+        End I2M + MU + ME
+        ==================================== -->
+
+
+    <!--
+        V2M + MU
+        ==================================== -->
+
+    <section id="v2m" class="t2m">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>M<sup>2</sup>UGen's Video-to-Music Generation Demo</h2>
+                    <div class="devider">
+                        <i class="fa fa-file-video-o fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        This is the demo of our model's capability for Video-to-Music Generation and Music Understanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gradio-demo-container">
+            <!--Sample 2-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a melody perfect for the mood of the video
+                        <video controls>
+                            <source src="assets/vm_mu/sample2.mp4">
+                        </video>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a slow, melodic piece with a gentle melody.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu/hx4wjhgi.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the mood of the music?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The mood of the music is calming and relaxing.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What are the instruments used ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The instruments used are synth, bass, and a small string section.
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 3-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music with the instrument in the video
+                        <video controls>
+                            <source src="assets/vm_mu/sample3.mp4">
+                        </video>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a solo drum beat.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu/hrpiof6o.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Describe the music
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music is fast, groovy, punchy, and buoyant.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the main instrument used ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The main instrument used is a drum set.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the mood of the player?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The mood of the player is aggressive and energetic.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End V2M+MU
+        ==================================== -->
+
+
+    <!--
+        V2M + ME + MU
+        ==================================== -->
+
+    <section id="v2m-me" class="t2m-me">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>M<sup>2</sup>UGen's Video-to-Music Generation and Music Editing Demo</h2>
+                    <div class="devider">
+                        <i class="fa fa-file-video-o fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-plus fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-text-width fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        This is the demo of our model's capability for Video-to-Music Generation, Music Understanding and Music Editing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gradio-demo-container">
+            <!--Sample 1-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music for the video perfect for a club
+                        <video controls>
+                            <source src="assets/vm_mu_me/sample1.mp4">
+                        </video>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is an upbeat electronic music for a club.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu_me/b1vvo37_.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Describe the music in detail
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music is characterized by its fast tempo, upbeat rhythm, and electronic elements.
+                        The electronic elements give the music a modern and futuristic feel.
+                        The music is upbeat and energetic, with a catchy melody that is sure to get stuck in your head.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Speed up the tempo and add more beats to the music
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a fast upbeat electronic music with a focus on synthesizers and percussion.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu_me/h7hw0ur2.wav">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 2-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music with the instruments in the video
+                        <video controls>
+                            <source src="assets/vm_mu_me/sample2.mp4">
+                        </video>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is fast and intense music with a strong beat and percussion.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu_me/hjrki291.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Make the music more upbeat and lively perfect for dancing
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a drum beat with fast tempo and complex rhythms.
+                        <audio controls style="width: 100%">
+                            <source src="assets/vm_mu_me/e_tqly6z.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the mood of the music ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The mood of the music is energetic, groovy, buoyant, vivacious, and vibrant.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Where can I play this music ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        This music can be played in a club.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End V2M + MU + ME
+        ==================================== -->
+
+
+    <!--
+        ME + MU
+        ==================================== -->
+
+    <section id="me" class="t2m">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>M<sup>2</sup>UGen's Music Editing Demo</h2>
+                    <div class="devider">
+                        <i class="fa fa-music fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-plus fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-text-width fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        This is the demo of our model's capability for Music Editing and Music Understanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gradio-demo-container">
+            <!--Sample 2-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Speed up the piano music and make it upbeat
+                        <audio controls>
+                            <source src="assets/me_mu/paino.wav">
+                        </audio>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a fast piano music with a catchy melody.
+                        <audio controls style="width: 100%">
+                            <source src="assets/me_mu/_26m24bn.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Replace the piano with an acoustic guitar
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a fast music played with guitar and strings.
+                        <audio controls style="width: 100%">
+                            <source src="assets/me_mu/ukc50lbn.wav">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 3-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the main instrument in the music ?
+                        <audio controls>
+                            <source src="assets/me_mu/flute.mp3">
+                        </audio>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The main instrument in the music is the flute.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Replace the flute in the music with an acoustic guitar
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a slow and relaxing piece that evokes a sense of calmness and tranquility.
+                        <audio controls style="width: 100%">
+                            <source src="assets/me_mu/ra63ve3p.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the main instrument in the music ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The main instrument in this music is the guitar.
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 4-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Remove the guitar from this music
+                        <audio controls>
+                            <source src="assets/me_mu/energetic_drums.mp3">
+                        </audio>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a techno dance song with a fast tempo and vigorous drumming.
+                        <audio controls style="width: 100%">
+                            <source src="assets/me_mu/nvrkldmq.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Is there a guitar in this music ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        No, there is no guitar in this music.
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 5-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the tempo of this music ?
+                        <audio controls>
+                            <source src="assets/me_mu/techno.mp3">
+                        </audio>
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The tempo of this music is medium.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Speed up the tempo of the music and add a repetitive melody
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a fast and energetic electronic dance music track with a repetitive and catchy beat.
+                        <audio controls style="width: 100%">
+                            <source src="assets/me_mu/l1mscss1.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the tempo of this music ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The tempo of this music is fast.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the mood of the artist ?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The mood of the artist is energetic and groovy.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End V2M+MU
         ==================================== -->
 
 
