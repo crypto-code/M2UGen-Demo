@@ -1212,58 +1212,6 @@
             </div>
         </div>
         <div class="gradio-demo-container">
-<!--            &lt;!&ndash;Sample 1&ndash;&gt;-->
-<!--            <div class="gradio-demo">-->
-<!--                <div class="gradio-user-row">-->
-<!--                    <div class="gradio-user">-->
-<!--                        Generate a jazz music with different instruments-->
-<!--                    </div>-->
-<!--                    <img src="img/user.png">-->
-<!--                </div>-->
-
-<!--                <div class="gradio-bot-row">-->
-<!--                    <img src="img/bot.png">-->
-<!--                    <div class="gradio-bot">-->
-<!--                        Here is an upbeat jazz melody that has a catchy melody.-->
-<!--                        <audio controls style="width: 100%">-->
-<!--                            <source src="assets/tm_mu_me/1uoat9m8.mp3">-->
-<!--                        </audio>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="gradio-user-row">-->
-<!--                    <div class="gradio-user">-->
-<!--                        Describe the music in detail-->
-<!--                    </div>-->
-<!--                    <img src="img/user.png">-->
-<!--                </div>-->
-
-<!--                <div class="gradio-bot-row">-->
-<!--                    <img src="img/bot.png">-->
-<!--                    <div class="gradio-bot">-->
-<!--                        The music is upbeat and energetic, with a strong beat and synths that create a futuristic and modern sound.-->
-<!--                        The drums add to the overall rhythm of the music, making it easy to dance to.-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="gradio-user-row">-->
-<!--                    <div class="gradio-user">-->
-<!--                        Slow down the tempo of the music-->
-<!--                    </div>-->
-<!--                    <img src="img/user.png">-->
-<!--                </div>-->
-
-<!--                <div class="gradio-bot-row">-->
-<!--                    <img src="img/bot.png">-->
-<!--                    <div class="gradio-bot">-->
-<!--                        Here is a slow and soothing instrumental piece with a calming atmosphere.-->
-<!--                        <audio controls style="width: 100%">-->
-<!--                            <source src="assets/tm_mu_me/b09zpqmi.mp3">-->
-<!--                        </audio>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
             <!--Sample 2-->
             <div class="gradio-demo">
                 <div class="gradio-user-row">
@@ -1421,6 +1369,271 @@
                     <img src="img/bot.png">
                     <div class="gradio-bot">
                         The mood of the music is intense and powerful, with a strong sense of energy and movement.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End T2M + MU + ME
+        ==================================== -->
+
+
+    <!--
+        I2M + MU
+        ==================================== -->
+
+    <section id="i2m" class="t2m">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>M<sup>2</sup>UGen's Image-to-Music Generation Demo</h2>
+                    <div class="devider">
+                        <i class="fa fa-image fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        This is the demo of our model's capability for Image-to-Music Generation and Music Understanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gradio-demo-container">
+            <!--Sample 1-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music for this image
+                        <img src="assets/im_mu/drum.webp">
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a metal music performed by a band.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu/hl4y9qxz.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Describe the vibe of the music
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music is a powerful and intense dance music with a loud, vigorous, boisterous, youthful, intense, and upbeat vibe.
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 2-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music with the instrument in the image
+                        <img src="assets/im_mu/guitar.jpg">
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is an upbeat and energetic music using a guitar.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu/d74en_jp.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What can you tell me about the music?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music is a fast-paced instrumental with a guitar and drums playing the main melody and rhythm.
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        What is the mood of the music?
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The mood of the music is upbeat, intense, buoyant, spirited, youthful, vibrant, funky, boisterous and vigorous.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End T2M+MU
+        ==================================== -->
+
+
+    <!--
+        T2M + ME + MU
+        ==================================== -->
+
+    <section id="i2m-me" class="t2m-me">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center">
+                    <h2>M<sup>2</sup>UGen's Image-to-Music Generation and Music Editing Demo</h2>
+                    <div class="devider">
+                        <i class="fa fa-image fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-plus fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-text-width fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-long-arrow-right fa-2x"></i>
+                        &emsp;
+                        <i class="fa fa-music fa-2x"></i>
+                        &emsp;
+                    </div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p class="mb50">
+                        This is the demo of our model's capability for Image-to-Music Generation, Music Understanding and Music Editing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gradio-demo-container">
+            <!--Sample 1-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music perfect for the old image
+                        <img src="assets/im_mu_me/oldman.jpg">
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a music that is a slow and melancholic guitar solo, reminiscent of a sad and nostalgic mood.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu_me/5q4n6wlt.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Add more instruments to the music and make it slightly more upbeat keeping the same tempo
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a slow and soothing instrumental piece with a calming effect.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu_me/giou1xhs.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        List the instruments used
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music features a piano, bass, and drums.
+                    </div>
+                </div>
+            </div>
+
+            <!--Sample 2-->
+            <div class="gradio-demo">
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a music for this image
+                        <img src="assets/im_mu_me/eerie.webp">
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is a eerie and haunting music.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu_me/zzmhhy8q.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Generate a more upbeat music
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        Here is an upbeat and eerie music.
+                        <audio controls style="width: 100%">
+                            <source src="assets/im_mu_me/5bz_nhcd.wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="gradio-user-row">
+                    <div class="gradio-user">
+                        Describe the music in detail
+                    </div>
+                    <img src="img/user.png">
+                </div>
+
+                <div class="gradio-bot-row">
+                    <img src="img/bot.png">
+                    <div class="gradio-bot">
+                        The music is characterized by a slow and steady beat, with the drums providing the foundation for the rest of the instruments to build upon.
+                        The synth adds a layer of texture to the music, while the bass provides a steady rhythm.
+                        The music is also characterized by a sense of tension and release, with the drums building up to a climax before dropping back down to a slow and steady beat.
                     </div>
                 </div>
             </div>
